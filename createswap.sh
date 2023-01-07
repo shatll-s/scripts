@@ -7,7 +7,7 @@
 echo "Make swap with size $size"
 
 sudo -i
-fallocate -l 8G /swapfile
+fallocate -l $size /swapfile
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
